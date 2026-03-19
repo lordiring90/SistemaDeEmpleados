@@ -42,6 +42,6 @@ public class EmpleadoVentas extends Empleado {
     }
 
     public void mostrarInformacion() {
-        System.out.println("ID: " + id + " | Nombre: " + nombre + " | Edad: " + edad + " | Salario Base: $" + salarioBase + " | total ventas: " + totalVentasMes + " | comision: " + porcentajeComision);
+        System.out.println("ID: " + id + "\n | Nombre: " + nombre + "\n | Edad: " + edad + "\n | Salario Base: $" + salarioBase + "\n | bonificacion: " + "\n | total ventas: " + totalVentasMes + "\n | comision: " + porcentajeComision);
     }
 }

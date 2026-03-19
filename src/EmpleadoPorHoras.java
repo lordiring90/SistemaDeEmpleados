@@ -35,11 +35,19 @@ public class EmpleadoPorHoras extends Empleado {
                 '}';
     }
     @Override
+    public void aumentarSalarioBase(double porcentaje) {
+        this.valorHora += this.valorHora * (porcentaje / 100);
+        System.out.println("nuevo valor de la hora: $" + this.valorHora);
+    }
+
+    @Override
     public double calcularSalarioFinal() {
         return horasTrabajadas * valorHora;
     }
 
+
     public void mostrarInformacion() {
-        System.out.println("ID: " + id + " | Nombre: " + nombre + " | Edad: " + edad + " | Salario Base: $" + salarioBase + " | horas trabajadas: " + horasTrabajadas + " | valor por hora: " + valorHora);
+        System.out.println("ID: " + id + "\n | Nombre: " + nombre + "\n | Edad: " + edad  + "\n | horas trabajadas: " + horasTrabajadas + "\n | valor por hora: " + valorHora);
+
     }
 }
